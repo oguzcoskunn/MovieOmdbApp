@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func searchButtonTapped() {
+        sView.searchTextField.endEditing(true)
         let searchText = sView.searchTextField.text ?? ""
         getMovies(searchText)
     }

@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
         sView.filmListCV.delegate = self
         sView.filmListCV.collectionViewLayout = UICollectionViewFlowLayout()
         sView.searchButton.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
+        sView.doneButton.action = #selector(doneButtonAction)
+        sView.doneButton.target = self
     }
     
     @objc func searchButtonTapped() {
@@ -57,6 +59,10 @@ class HomeViewController: UIViewController {
                 self.sView.loadingSpinner.stopAnimating()
             }
         }
+    }
+    
+    @objc func doneButtonAction(){
+        sView.searchTextField.endEditing(true)
     }
 }
 

@@ -90,7 +90,6 @@
 				CF4B6E252977F0050011E678 /* Model */,
 				CF4B6E81297BB23A0011E678 /* View */,
 				CF4B6E82297BB2430011E678 /* Controller */,
-				CF4B6E7629793E730011E678 /* MainNavigationController.swift */,
 				CF4B6E032977E1FD0011E678 /* AppDelegate.swift */,
 				CF4B6E052977E1FD0011E678 /* SceneDelegate.swift */,
 				CF4B6E0C2977E1FE0011E678 /* Assets.xcassets */,
@@ -148,6 +147,7 @@
 		CF4B6E82297BB2430011E678 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CF4B6E7629793E730011E678 /* MainNavigationController.swift */,
 				CF4B6E072977E1FD0011E678 /* HomeViewController.swift */,
 				CF4B6E69297800B80011E678 /* HomeViewController_CV_Ext.swift */,
 				CF4B6E8E297BD0780011E678 /* MovieDetailViewController.swift */,
@@ -394,6 +394,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +422,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

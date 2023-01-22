@@ -14,6 +14,7 @@ public class HomeView: UIView {
     let searchButton = UIButton()
     let loadingSpinner = UIActivityIndicatorView()
     var topBar = NavigationBarView()
+    var doneButton: UIBarButtonItem!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,6 +22,7 @@ public class HomeView: UIView {
         buildNavigationBar()
         buildSearchBar()
         buildFilmListCV()
+        addDoneButtonOnKeyboard()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -85,4 +87,20 @@ public class HomeView: UIView {
         filmListCV.bottomAnchor.constraint(equalTo: safeBottomAnchor, constant: 10).isActive = true
     }
     
+    private func addDoneButtonOnKeyboard(){
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        doneToolbar.barStyle = .default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: nil)
+        
+        if let doneButton {
+            let items = [flexSpace, doneButton]
+            doneToolbar.items = items
+            doneToolbar.sizeToFit()
+            
+            searchTextField.inputAccessoryView = doneToolbar
+        }
+        
+    }
 }

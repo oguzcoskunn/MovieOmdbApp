@@ -12,10 +12,6 @@ enum Api {
     static let apiKey = "172b9d25"
 }
 
-enum CellNibName {
-    static let movieCellNibName = "MovieCell"
-}
-
 enum CellIdentifier {
     static let movieCellIdentifier = "MovieCellIdentifier"
 }

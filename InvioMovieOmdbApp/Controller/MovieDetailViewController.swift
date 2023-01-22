@@ -60,7 +60,7 @@ class MovieDetailViewController: UIViewController {
         
         if moviesData.Poster != Keywords.notFound {
             DispatchQueue.main.async {
-                Helper.shared.setImage(with: (moviesData.Poster ?? ""), with: self.sView.movieImageView)
+                Helper.shared.setImage(with: (moviesData.Poster ?? ""), with: self.sView.movieImageView, with: 15)
             }
         } else {
             self.sView.movieImageView.image = UIImage(named: "notFound")

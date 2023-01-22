@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
-//  MovieOmdbApp
+//  Helper.swift
+//  InvioMovieOmdbApp
 //
-//  Created by Halil Kaya on 19.12.2021.
+//  Created by Oğuz Coşkun on 18.01.2023.
 //
 
 import UIKit

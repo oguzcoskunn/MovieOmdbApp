@@ -24,9 +24,11 @@ public class NavigationBarView: UIView {
     
     private func buildNavigationBar() {
         backArrowButton = UIButton()
+        
         let imageConfiguration = UIImage.SymbolConfiguration(pointSize: 22, weight: .bold, scale: .large)
         let image = UIImage(systemName: "arrow.left", withConfiguration: imageConfiguration)
         backArrowButton.setImage(image, for: .normal)
+        
         backArrowButton.tintColor = .white
         addSubview(backArrowButton)
         backArrowButton.translatesAutoresizingMaskIntoConstraints = false

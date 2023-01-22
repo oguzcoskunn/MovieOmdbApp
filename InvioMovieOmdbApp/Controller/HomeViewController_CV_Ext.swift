@@ -1,9 +1,8 @@
 //
 //  HomeViewController_CV_Ext.swift
-//  SPXSpecFramework
+//  InvioMovieOmdbApp
 //
 //  Created by Oğuz Coşkun on 18.01.2023.
-//  Copyright © 2023 Spexco. All rights reserved.
 //
 
 import UIKit
@@ -43,7 +42,7 @@ extension HomeViewController: UICollectionViewDataSource {
         
         if imageLink != Keywords.notFound {
             DispatchQueue.main.async {
-                Helper.shared.setImage(with: imageLink, with: cell.movieImageView, with: 0)
+                Helper.shared.setImage(with: imageLink, with: cell.movieImageView)
             }
             
         } else {

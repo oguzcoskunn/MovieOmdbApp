@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
             self.sView.filmListCV.reloadData()
             self.sView.loadingSpinner.startAnimating()
             
-            self.service.getSearchMovies(with: title) { movieSearch in
+            self.service.getSearchMovies(with: title.replacingOccurrences(of: " ", with: "%20")) { movieSearch in
                 if let movieSearch {
                     self.moviesSearchDataList = movieSearch
                     

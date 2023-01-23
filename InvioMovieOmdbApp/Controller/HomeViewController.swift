@@ -33,6 +33,10 @@ class HomeViewController: UIViewController {
         let searchText = sView.searchTextField.text ?? ""
         getMovies(searchText)
     }
+    
+    @objc func doneButtonAction(){
+        sView.searchTextField.endEditing(true)
+    }
 
     func getMovies(_ title: String) {
         DispatchQueue.main.async {
@@ -60,10 +64,6 @@ class HomeViewController: UIViewController {
                 self.sView.loadingSpinner.stopAnimating()
             }
         }
-    }
-    
-    @objc func doneButtonAction(){
-        sView.searchTextField.endEditing(true)
     }
 }
 
